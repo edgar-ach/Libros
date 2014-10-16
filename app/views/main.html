@@ -9,6 +9,63 @@
         <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
         <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
         #{get 'moreScripts' /}
+
+
+
+     <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+ 
+ <!-- PARA IMPORTAR BOOTSTRAP -->
+    <link rel="stylesheet"  href="@{'/public/stylesheets/bootstrap-responsive.css'}">
+    <link rel="stylesheet" href="@{'/public/stylesheets/bootstrap.css'}">
+
+    <link rel="stylesheet" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+
+    /*Desde un escritorio*/
+    @media(min-width: 1200px){
+        /*body{ color:red;}*/
+
+    }
+
+
+    /*Desde un escritorio peque;o o tablet*/
+    @media(min-width: 768px)  and (max-width: 979px){
+
+
+        /*body{ color:green;}*/
+
+    }
+
+
+    /*Table o smartphone*/
+    @media(min-width: 481)and(max-width: 767px) {
+
+
+        /*body{ color:blue;}*/
+
+    }
+
+
+    /*Smartphone*/
+    @media(max-width: 480px ){
+
+
+        /*body{ color:yellow;}*/
+
+    }
+
+    .text-big{
+        font-size: 300px;
+        line-height: 320px;
+    }
+
+
+
+    </style>
+
+
+
     </head>
     <body>
         #{doLayout /}
