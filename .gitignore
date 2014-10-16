@@ -41,3 +41,10 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+#Archivos omitidos
+/tmp
+/modules
+/lib
+/test-result
+/logs
