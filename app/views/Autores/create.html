@@ -1,1 +1,50 @@
-A CREAR AUTORES
+#{extends 'main.html' /}
+#{set title:'CREANDO AUTORES' /}
+
+<div class="container">
+    <div class="row-fluid">
+        <div class="span12">
+            <br>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span12 text-center well">
+            <h1>Ingreso de Autores</h1>
+        </div>
+    </div>
+
+     <div class="row-fluid">
+        <div class="span4">
+            
+        </div>
+
+        <div class="span4">
+
+            #{form @Autores.postCreate(nombre,apellido,edad,mail)}
+                <p>
+                   <legend> Su Nombre: </legend>
+                    <input type="text" name="nombre" id="nombre" required/>
+                </p>
+                <p>
+                   <legend> Su apellido: </legend>
+                    <input type="text" name="apellido" id="apellido" required></input>
+                </p>
+                <p>
+                    <legend> Su edad: </legend>
+                   <input type="text" name="edad" id="edad" required></input>
+                </p>
+                 <p>
+                    <legend> Su Correo </legend>
+                   <input type="email" name="mail" id="mail"></input>
+                </p>
+                <p>
+                    <button type="submit"  class="btn btn-primary"><i class="icon-ok"></i> Guardar</button> 
+                </p>
+            #{/form}
+        </div>
+
+        <div class="span4">
+            
+        </div>
+    </div>
+</div>
