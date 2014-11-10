@@ -11,4 +11,9 @@ public class Libro extends Model{
 	public String categoria;
 	@ManyToOne
 	public Autor autor;	
+	
+	public String toString(){
+		
+		return titulo;
+	}
 }

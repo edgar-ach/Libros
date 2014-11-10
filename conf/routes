@@ -16,3 +16,6 @@ GET     /public/                                staticDir:public
 
 # Catch all
 *       /{controller}/{action}                  {controller}.{action}
+
+# Importar routes del módulo CRUD
+GET    /adminlibros                                  Libros.list
