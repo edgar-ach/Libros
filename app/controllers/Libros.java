@@ -1,5 +1,5 @@
 package controllers;
 
-public class Libros extends CRUD{
+public class Libros extends CRUDS{
 
 }

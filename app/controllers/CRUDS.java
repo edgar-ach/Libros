@@ -28,7 +28,7 @@ import play.mvc.Controller;
 import play.mvc.Router;
 import play.utils.Java;
 
-public abstract class CRUD extends Controller {
+public abstract class CRUDS extends Controller {
 
     @Before
     public static void addType() throws Exception {
@@ -37,7 +37,7 @@ public abstract class CRUD extends Controller {
     }
 
     public static void index() {
-        if (getControllerClass() == CRUD.class) {
+        if (getControllerClass() == CRUDS.class) {
             forbidden();
         }
         render("CRUD/index.html");
