@@ -17,6 +17,12 @@ public class Autores extends Controller {
     	render(autores);
         
     }
+    
+    public static void detallar(Long id ){
+    	Autor autor=Autor.findById(id);
+    	render (autor);
+
+    }
 
 
    public static void search(String buscando){
